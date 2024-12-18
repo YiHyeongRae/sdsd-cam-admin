@@ -20,20 +20,20 @@ function index() {
 
   const [user, setUser] = useState<{ [key: string]: string | number }>();
 
-  useEffect(() => {
-    const userCookie = getCookie("sdsd_admin_user") || "";
-    const bytes = CryptoJS.AES.decrypt(
-      userCookie,
-      import.meta.env.VITE_AUTH_SESSION_SECRET_KEY
-    );
+  // useEffect(() => {
+  //   const userCookie = getCookie("sdsd_admin_user") || "";
+  //   const bytes = CryptoJS.AES.decrypt(
+  //     userCookie,
+  //     import.meta.env.VITE_AUTH_SESSION_SECRET_KEY
+  //   );
 
-    const decrypted =
-      bytes?.words?.length !== 0
-        ? JSON.parse(bytes.toString(CryptoJS.enc.Utf8))
-        : {};
+  //   const decrypted =
+  //     bytes?.words?.length !== 0
+  //       ? JSON.parse(bytes.toString(CryptoJS.enc.Utf8))
+  //       : {};
 
-    setUser(decrypted);
-  }, []);
+  //   setUser(decrypted);
+  // }, []);
 
   const submitChangePw = () => {
     setLoading(true);

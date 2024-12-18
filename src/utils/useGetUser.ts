@@ -13,5 +13,5 @@ export function getDecryptedUser() {
       ? JSON.parse(bytes.toString(CryptoJS.enc.Utf8))
       : {};
 
-  return decrypted;
+  return {};
 }

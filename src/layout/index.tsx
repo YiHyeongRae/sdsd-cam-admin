@@ -18,30 +18,30 @@ function index({ children }: { children: ReactNode }) {
   const [loading] = useRecoilState(loadingState);
   const [user, setUser] = useState<{ [key: string]: string | number }>();
 
-  useEffect(() => {
-    if (/Android|iPhone/i.test(navigator.userAgent)) {
-      setNavState(false);
-    }
+  // useEffect(() => {
+  //   if (/Android|iPhone/i.test(navigator.userAgent)) {
+  //     setNavState(false);
+  //   }
 
-    const userCookie = getCookie("sdsd_admin_user") || "";
-    const bytes = CryptoJS.AES.decrypt(
-      userCookie,
-      import.meta.env.VITE_AUTH_SESSION_SECRET_KEY
-    );
+  //   const userCookie = getCookie("sdsd_admin_user") || "";
+  //   const bytes = CryptoJS.AES.decrypt(
+  //     userCookie,
+  //     import.meta.env.VITE_AUTH_SESSION_SECRET_KEY
+  //   );
 
-    const decrypted =
-      bytes?.words?.length !== 0
-        ? JSON.parse(bytes.toString(CryptoJS.enc.Utf8))
-        : {};
+  //   const decrypted =
+  //     bytes?.words?.length !== 0
+  //       ? JSON.parse(bytes.toString(CryptoJS.enc.Utf8))
+  //       : {};
 
-    setUser(decrypted);
-  }, []);
+  //   setUser(decrypted);
+  // }, []);
 
   return (
     <>
       {loading.isLoading && !loading.isModal && <LoadingFullScreen />}
       <div className={`h-full ${navStatae ? "pl-56" : "pl-14"}`}>
-        <Header func={setNavState} navState={navStatae} user={user || {}} />
+        <Header func={setNavState} navState={navStatae} user={{}} />
         <Sidebar
           open={navStatae}
           data={Paths}
