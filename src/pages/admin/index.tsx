@@ -404,7 +404,7 @@ function index() {
                   <label className="flex-auto">
                     <button
                       className="rounded-none btn-block btn btn-error btn-sm max-sm:btn-xs btn-primary"
-                      disabled={getDecryptedUser().adminId === adminDetail.id}
+                      // disabled={getDecryptedUser().adminId === adminDetail.id}
                       onClick={() => {
                         openModal("delete-admin");
                         // closeModal("admin");
