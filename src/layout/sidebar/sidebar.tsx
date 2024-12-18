@@ -32,8 +32,8 @@ function index({ open, data, role }: PathTypes) {
           </li>
           {data.map((item, index) => {
             return (
-              item.access?.includes(role) &&
-              (item.sub.length === 0 ? (
+              // item.access?.includes(role) &&
+              item.sub.length === 0 ? (
                 <li
                   key={`no-sub-menu-${index}`}
                   onClick={() => {
@@ -114,7 +114,7 @@ function index({ open, data, role }: PathTypes) {
                     })}
                   </ul>
                 </li>
-              ))
+              )
             );
           })}
         </ul>
@@ -136,8 +136,8 @@ function index({ open, data, role }: PathTypes) {
           </li>
           {data.map((item, index) => {
             return (
-              item.access?.includes(role) &&
-              (item.sub.length === 0 ? (
+              // item.access?.includes(role) &&
+              item.sub.length === 0 ? (
                 <li
                   key={`no-sub-menu-${index}`}
                   onClick={() => {
@@ -217,7 +217,7 @@ function index({ open, data, role }: PathTypes) {
                     })}
                   </ul>
                 </li>
-              ))
+              )
             );
           })}
         </ul>

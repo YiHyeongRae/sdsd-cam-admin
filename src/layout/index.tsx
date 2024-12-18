@@ -53,16 +53,16 @@ function index({ children }: { children: ReactNode }) {
           }}
           className="relative h-full p-6 overflow-y-auto max-sm:p-2"
         >
-          <AccessGuard
+          {/* <AccessGuard
             data={Paths}
             role={user?.adminType as string}
             isChangedPassword={
               (isBoolean(user?.isChangedPassword) && user?.isChangedPassword) ||
               false
             }
-          >
-            {children}
-          </AccessGuard>
+          > */}
+          {children}
+          {/* </AccessGuard> */}
         </div>
       </div>
     </>
