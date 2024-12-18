@@ -30,7 +30,7 @@ function index({ children }: { children: ReactNode }) {
     );
 
     const decrypted =
-      bytes.words.length !== 0
+      bytes?.words?.length !== 0
         ? JSON.parse(bytes.toString(CryptoJS.enc.Utf8))
         : {};
 
