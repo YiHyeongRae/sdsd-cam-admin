@@ -76,7 +76,7 @@ function index({
     const dummyResult: any = [
       {
         id: 285,
-        userName: "정주",
+        userName: "artnarn",
         userId: 57,
         boardId: 117,
         createdAt: "2024-12-10 12:13:36",
@@ -90,7 +90,7 @@ function index({
       },
       {
         id: 287,
-        userName: "정주",
+        userName: "artnfafd",
         userId: 57,
         boardId: 117,
         createdAt: "2024-12-10 12:13:46",
@@ -104,7 +104,7 @@ function index({
       },
       {
         id: 288,
-        userName: "정주",
+        userName: "waeradfb",
         userId: 57,
         boardId: 117,
         createdAt: "2024-12-10 12:13:58",
@@ -118,7 +118,7 @@ function index({
       },
       {
         id: 289,
-        userName: "정주",
+        userName: "agngfns",
         userId: 57,
         boardId: 117,
         createdAt: "2024-12-10 12:14:03",

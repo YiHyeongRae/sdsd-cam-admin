@@ -72,7 +72,7 @@ function index() {
         {
           id: 82,
           createdAt: "2024-12-18 10:27:42",
-          userName: "버거왕",
+          userName: "ㄴㅎㅂ",
           userId: 18,
           title: "버거",
           inquiryStatus: "Pending",
@@ -80,7 +80,7 @@ function index() {
         {
           id: 81,
           createdAt: "2024-12-17 08:22:14",
-          userName: "김훈직",
+          userName: "ㅁㄷㄱㄱㄷ",
           userId: 55,
           title: "ㅌㅌㅌ",
           inquiryStatus: "Answered",
@@ -88,7 +88,7 @@ function index() {
         {
           id: 80,
           createdAt: "2024-12-16 13:41:22",
-          userName: "정주",
+          userName: "trnfsgn",
           userId: 57,
           title: "방해금지 off",
           inquiryStatus: "Answered",
@@ -96,7 +96,7 @@ function index() {
         {
           id: 79,
           createdAt: "2024-12-16 13:40:41",
-          userName: "정주",
+          userName: "trnfsgn",
           userId: 57,
           title: "ㄴㄷㄴㄷㄴ",
           inquiryStatus: "Answered",
@@ -104,7 +104,7 @@ function index() {
         {
           id: 78,
           createdAt: "2024-12-16 13:26:14",
-          userName: "정주",
+          userName: "trnfsgn",
           userId: 57,
           title: "테스트",
           inquiryStatus: "Answered",
@@ -112,7 +112,7 @@ function index() {
         {
           id: 77,
           createdAt: "2024-12-16 13:13:46",
-          userName: "정주",
+          userName: "trnfsgn",
           userId: 57,
           title: "ㄱㅈㄱㅈ",
           inquiryStatus: "Answered",
@@ -120,7 +120,7 @@ function index() {
         {
           id: 76,
           createdAt: "2024-12-16 12:19:49",
-          userName: "정주",
+          userName: "trnfsgn",
           userId: 57,
           title: "가자",
           inquiryStatus: "Answered",
@@ -128,7 +128,7 @@ function index() {
         {
           id: 75,
           createdAt: "2024-12-16 12:08:12",
-          userName: "정주",
+          userName: "trnfsgn",
           userId: 57,
           title: "괴밀행사도",
           inquiryStatus: "Answered",
@@ -136,7 +136,7 @@ function index() {
         {
           id: 74,
           createdAt: "2024-12-16 10:53:11",
-          userName: "정주",
+          userName: "trnfsgn",
           userId: 57,
           title: "테스트2",
           inquiryStatus: "Answered",
@@ -144,7 +144,7 @@ function index() {
         {
           id: 73,
           createdAt: "2024-12-16 10:52:58",
-          userName: "정주",
+          userName: "trnfsgn",
           userId: 57,
           title: "테스뜨3",
           inquiryStatus: "Answered",
@@ -152,7 +152,7 @@ function index() {
         {
           id: 72,
           createdAt: "2024-12-16 10:40:17",
-          userName: "정주",
+          userName: "trnfsgn",
           userId: 57,
           title: "테스트5",
           inquiryStatus: "Answered",
@@ -160,7 +160,7 @@ function index() {
         {
           id: 71,
           createdAt: "2024-12-16 10:38:57",
-          userName: "정주",
+          userName: "trnfsgn",
           userId: 57,
           title: "문의하자",
           inquiryStatus: "Answered",
@@ -168,7 +168,7 @@ function index() {
         {
           id: 70,
           createdAt: "2024-12-16 09:32:49",
-          userName: "김훈직",
+          userName: "ㅁㄷㄱㄱㄷ",
           userId: 55,
           title: "3434",
           inquiryStatus: "Answered",
@@ -176,7 +176,7 @@ function index() {
         {
           id: 69,
           createdAt: "2024-12-16 09:00:23",
-          userName: "김훈직",
+          userName: "ㅁㄷㄱㄱㄷ",
           userId: 55,
           title: "55555",
           inquiryStatus: "Answered",
@@ -184,7 +184,7 @@ function index() {
         {
           id: 68,
           createdAt: "2024-12-16 08:58:41",
-          userName: "김훈직",
+          userName: "ㅁㄷㄱㄱㄷ",
           userId: 55,
           title: "2222",
           inquiryStatus: "Answered",
@@ -192,7 +192,7 @@ function index() {
         {
           id: 67,
           createdAt: "2024-12-16 07:38:51",
-          userName: "김훈직",
+          userName: "ㅁㄷㄱㄱㄷ",
           userId: 55,
           title: "333",
           inquiryStatus: "Answered",
@@ -200,7 +200,7 @@ function index() {
         {
           id: 66,
           createdAt: "2024-12-16 07:37:42",
-          userName: "김훈직",
+          userName: "ㅁㄷㄱㄱㄷ",
           userId: 55,
           title: "33333",
           inquiryStatus: "Answered",
@@ -208,7 +208,7 @@ function index() {
         {
           id: 65,
           createdAt: "2024-12-16 07:36:05",
-          userName: "김훈직",
+          userName: "ㅁㄷㄱㄱㄷ",
           userId: 55,
           title: "dw",
           inquiryStatus: "Answered",
@@ -216,7 +216,7 @@ function index() {
         {
           id: 64,
           createdAt: "2024-12-16 07:32:14",
-          userName: "김훈직",
+          userName: "ㅁㄷㄱㄱㄷ",
           userId: 55,
           title: "444",
           inquiryStatus: "Answered",
@@ -224,7 +224,7 @@ function index() {
         {
           id: 63,
           createdAt: "2024-12-16 07:31:10",
-          userName: "김훈직",
+          userName: "ㅁㄷㄱㄱㄷ",
           userId: 55,
           title: "3333",
           inquiryStatus: "Answered",
@@ -385,11 +385,11 @@ function index() {
                 title: "가자",
                 content: "ㄱㄷㄱ",
                 inquiryStatus: "Answered",
-                userName: "정주",
+                userName: "trnfsgn",
                 email: "sahonmu@naver.com",
                 answer: "미안합니다.",
                 answeredAt: "2024-12-16 12:34:33",
-                adminName: "정주현",
+                adminName: "trnfsgn현",
                 images: [
                   "https://ssokdak-campus-dev.s3.ap-northeast-2.amazonaws.com/inquiry/57/1734319189371_full.jpeg",
                   "https://ssokdak-campus-dev.s3.ap-northeast-2.amazonaws.com/inquiry/57/1734319189378_20240312_183236.jpg",

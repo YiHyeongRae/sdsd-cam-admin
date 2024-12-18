@@ -226,7 +226,7 @@ function index() {
       boards: [
         {
           id: 117,
-          userName: "정주",
+          userName: "221a",
           userId: 57,
           category: "일상",
           title: "최종 댓글 테스트",
@@ -239,10 +239,10 @@ function index() {
         },
         {
           id: 115,
-          userName: "김훈직",
+          userName: "adsf",
           userId: 55,
           category: "일상",
-          title: "KHJ 댓글 테스트입니다.",
+          title: "aaa 댓글 테스트입니다.",
           views: 66,
           like: 0,
           createdAt: "2024-12-10 08:16:37",
@@ -252,7 +252,7 @@ function index() {
         },
         {
           id: 114,
-          userName: "버거왕",
+          userName: "aerban a",
           userId: 18,
           category: "일상",
           title: "사혼무",
@@ -265,7 +265,7 @@ function index() {
         },
         {
           id: 112,
-          userName: "카고임",
+          userName: "annac",
           userId: 29,
           category: "일상",
           title: "ㅌㅅㅌ",
@@ -278,7 +278,7 @@ function index() {
         },
         {
           id: 109,
-          userName: "김훈직",
+          userName: "adsf",
           userId: 28,
           category: "연애",
           title: "연애란 무엇일까",
@@ -291,7 +291,7 @@ function index() {
         },
         {
           id: 108,
-          userName: "버거왕",
+          userName: "aerban a",
           userId: 18,
           category: "일상",
           title:
@@ -305,7 +305,7 @@ function index() {
         },
         {
           id: 107,
-          userName: "금태종태종태종",
+          userName: "23r4s",
           userId: 43,
           category: "운동",
           title: "ㅇ퓽ㄴㄴㅇㅇ",
@@ -318,7 +318,7 @@ function index() {
         },
         {
           id: 106,
-          userName: "금태종태종태종",
+          userName: "23r4s",
           userId: 43,
           category: "덕질",
           title: "1133555554ㄷㅈㅈㅈ일이삼사오육칠팔구십일이삼사오육칠팔구십",
@@ -331,7 +331,7 @@ function index() {
         },
         {
           id: 105,
-          userName: "카고임",
+          userName: "annac",
           userId: 29,
           category: "덕질",
           title: "덕ㅁㄴㅇㅋㅋㅋ",
@@ -344,7 +344,7 @@ function index() {
         },
         {
           id: 104,
-          userName: "버거왕",
+          userName: "aerban a",
           userId: 18,
           category: "연애",
           title: "연애",
@@ -357,7 +357,7 @@ function index() {
         },
         {
           id: 103,
-          userName: "버거왕",
+          userName: "aerban a",
           userId: 18,
           category: "일상",
           title: "일상",
@@ -370,7 +370,7 @@ function index() {
         },
         {
           id: 102,
-          userName: "카고임",
+          userName: "annac",
           userId: 29,
           category: "취업/학업",
           title: "ㅎ",
@@ -383,7 +383,7 @@ function index() {
         },
         {
           id: 100,
-          userName: "버거왕",
+          userName: "aerban a",
           userId: 18,
           category: "일상",
           title: null,
@@ -396,7 +396,7 @@ function index() {
         },
         {
           id: 99,
-          userName: "버거왕",
+          userName: "aerban a",
           userId: 18,
           category: "취업/학업",
           title: "페드로",
@@ -409,7 +409,7 @@ function index() {
         },
         {
           id: 98,
-          userName: "버거왕",
+          userName: "aerban a",
           userId: 18,
           category: "대인관계",
           title: "사진1개 테스트그",
@@ -422,7 +422,7 @@ function index() {
         },
         {
           id: 97,
-          userName: "버거왕",
+          userName: "aerban a",
           userId: 18,
           category: "취업/학업",
           title: "햄버거",
@@ -435,7 +435,7 @@ function index() {
         },
         {
           id: 88,
-          userName: "버거왕",
+          userName: "aerban a",
           userId: 18,
           category: "대인관계",
           title: "테스트당",
@@ -448,7 +448,7 @@ function index() {
         },
         {
           id: 80,
-          userName: "김훈직",
+          userName: "adsf",
           userId: 28,
           category: "대인관계",
           title: "test11",
@@ -461,7 +461,7 @@ function index() {
         },
         {
           id: 79,
-          userName: "버거왕",
+          userName: "aerban a",
           userId: 18,
           category: "취업/학업",
           title: "eudh",
@@ -474,7 +474,7 @@ function index() {
         },
         {
           id: 78,
-          userName: "버거왕",
+          userName: "aerban a",
           userId: 18,
           category: "일상",
           title: "dhn",

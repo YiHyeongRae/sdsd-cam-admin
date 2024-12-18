@@ -107,7 +107,7 @@ function index() {
         {
           id: 3,
           userId: 30,
-          userName: "배찬희",
+          userName: "aaa",
           collegeName: "서울대학교(본교)",
           programId: 1,
           title: "마음운동",

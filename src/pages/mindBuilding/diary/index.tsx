@@ -124,7 +124,7 @@ function index() {
         {
           id: 340,
           userId: 29,
-          userName: "카고임",
+          userName: "aetnatna",
           collegeName: "경희대학교(본교)",
           diaryDate: "2024-12-01",
           feeling: "행복해",
@@ -135,7 +135,7 @@ function index() {
         {
           id: 339,
           userId: 29,
-          userName: "카고임",
+          userName: "aetnatna",
           collegeName: "경희대학교(본교)",
           diaryDate: "2024-12-08",
           feeling: "슬퍼",
@@ -146,7 +146,7 @@ function index() {
         {
           id: 338,
           userId: 29,
-          userName: "카고임",
+          userName: "aetnatna",
           collegeName: "경희대학교(본교)",
           diaryDate: "2024-12-09",
           feeling: "지루해",
@@ -157,7 +157,7 @@ function index() {
         {
           id: 331,
           userId: 29,
-          userName: "카고임",
+          userName: "aetnatna",
           collegeName: "경희대학교(본교)",
           diaryDate: "2024-12-08",
           feeling: "설레",
@@ -168,7 +168,7 @@ function index() {
         {
           id: 325,
           userId: 29,
-          userName: "카고임",
+          userName: "aetnatna",
           collegeName: "경희대학교(본교)",
           diaryDate: "2024-12-09",
           feeling: "행복해",
@@ -179,7 +179,7 @@ function index() {
         {
           id: 323,
           userId: 29,
-          userName: "카고임",
+          userName: "aetnatna",
           collegeName: "경희대학교(본교)",
           diaryDate: "2024-11-20",
           feeling: "지루해",
@@ -190,7 +190,7 @@ function index() {
         {
           id: 321,
           userId: 29,
-          userName: "카고임",
+          userName: "aetnatna",
           collegeName: "경희대학교(본교)",
           diaryDate: "2024-10-01",
           feeling: "우울해",
@@ -201,7 +201,7 @@ function index() {
         {
           id: 320,
           userId: 29,
-          userName: "카고임",
+          userName: "aetnatna",
           collegeName: "경희대학교(본교)",
           diaryDate: "2024-10-06",
           feeling: "설레",
@@ -212,7 +212,7 @@ function index() {
         {
           id: 319,
           userId: 29,
-          userName: "카고임",
+          userName: "aetnatna",
           collegeName: "경희대학교(본교)",
           diaryDate: "2024-10-12",
           feeling: "슬퍼",
@@ -223,7 +223,7 @@ function index() {
         {
           id: 318,
           userId: 29,
-          userName: "카고임",
+          userName: "aetnatna",
           collegeName: "경희대학교(본교)",
           diaryDate: "2024-10-21",
           feeling: "설레",
@@ -234,7 +234,7 @@ function index() {
         {
           id: 317,
           userId: 29,
-          userName: "카고임",
+          userName: "aetnatna",
           collegeName: "경희대학교(본교)",
           diaryDate: "2024-10-16",
           feeling: "편안해",
@@ -245,7 +245,7 @@ function index() {
         {
           id: 316,
           userId: 29,
-          userName: "카고임",
+          userName: "aetnatna",
           collegeName: "경희대학교(본교)",
           diaryDate: "2024-10-10",
           feeling: "설레",
@@ -256,7 +256,7 @@ function index() {
         {
           id: 315,
           userId: 29,
-          userName: "카고임",
+          userName: "aetnatna",
           collegeName: "경희대학교(본교)",
           diaryDate: "2024-10-14",
           feeling: "설레",
@@ -267,7 +267,7 @@ function index() {
         {
           id: 314,
           userId: 29,
-          userName: "카고임",
+          userName: "aetnatna",
           collegeName: "경희대학교(본교)",
           diaryDate: "2024-10-08",
           feeling: "설레",
@@ -278,7 +278,7 @@ function index() {
         {
           id: 313,
           userId: 29,
-          userName: "카고임",
+          userName: "aetnatna",
           collegeName: "경희대학교(본교)",
           diaryDate: "2024-10-09",
           feeling: "지루해",
@@ -289,7 +289,7 @@ function index() {
         {
           id: 312,
           userId: 29,
-          userName: "카고임",
+          userName: "aetnatna",
           collegeName: "경희대학교(본교)",
           diaryDate: "2024-10-09",
           feeling: "설레",
@@ -300,7 +300,7 @@ function index() {
         {
           id: 310,
           userId: 29,
-          userName: "카고임",
+          userName: "aetnatna",
           collegeName: "경희대학교(본교)",
           diaryDate: "2024-09-10",
           feeling: "설레",
@@ -311,7 +311,7 @@ function index() {
         {
           id: 309,
           userId: 29,
-          userName: "카고임",
+          userName: "aetnatna",
           collegeName: "경희대학교(본교)",
           diaryDate: "2024-09-22",
           feeling: "행복해",
@@ -322,7 +322,7 @@ function index() {
         {
           id: 306,
           userId: 29,
-          userName: "카고임",
+          userName: "aetnatna",
           collegeName: "경희대학교(본교)",
           diaryDate: "2024-09-23",
           feeling: "편안해",
@@ -333,7 +333,7 @@ function index() {
         {
           id: 304,
           userId: 18,
-          userName: "버거왕",
+          userName: "221a",
           collegeName: "서울대학교(본교)",
           diaryDate: "2024-09-19",
           feeling: "힘들어",

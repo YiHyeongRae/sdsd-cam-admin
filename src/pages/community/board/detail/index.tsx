@@ -53,7 +53,7 @@ function index() {
     const dummyResult: any = {
       board: {
         id: 117,
-        userName: "정주",
+        userName: "aetbnaetbn",
         userId: 57,
         category: "일상",
         title: "최종 댓글 테스트",
@@ -102,7 +102,7 @@ function index() {
         {
           id: 286,
           commentType: "Community",
-          userName: "정주",
+          userName: "agbna",
           userId: 57,
           createdAt: "2024-12-10 12:13:40",
           updatedAt: "2024-12-10 12:13:40",
@@ -115,7 +115,7 @@ function index() {
         {
           id: 285,
           commentType: "Community",
-          userName: "정주",
+          userName: "awerawr",
           userId: 57,
           createdAt: "2024-12-10 12:13:36",
           updatedAt: "2024-12-10 12:13:36",
@@ -128,7 +128,7 @@ function index() {
         {
           id: 284,
           commentType: "Community",
-          userName: "정주",
+          userName: "fgsnsfb",
           userId: 57,
           createdAt: "2024-12-10 12:13:33",
           updatedAt: "2024-12-10 12:13:33",
@@ -232,7 +232,7 @@ function index() {
         {
           id: 286,
           commentType: "Community",
-          userName: "정주",
+          userName: "abeaqbae",
           userId: 57,
           createdAt: "2024-12-10 12:13:40",
           updatedAt: "2024-12-10 12:13:40",
@@ -245,7 +245,7 @@ function index() {
         {
           id: 285,
           commentType: "Community",
-          userName: "정주",
+          userName: "sfgbsfb",
           userId: 57,
           createdAt: "2024-12-10 12:13:36",
           updatedAt: "2024-12-10 12:13:36",
@@ -258,7 +258,7 @@ function index() {
         {
           id: 284,
           commentType: "Community",
-          userName: "정주",
+          userName: "sfgbsfb",
           userId: 57,
           createdAt: "2024-12-10 12:13:33",
           updatedAt: "2024-12-10 12:13:33",

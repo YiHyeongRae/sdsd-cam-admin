@@ -113,7 +113,7 @@ function index() {
         {
           id: 289,
           commentType: "Community",
-          userName: "정주",
+          userName: "23r4s",
           userId: 57,
           boardId: 117,
           createdAt: "2024-12-10 12:14:03",
@@ -126,7 +126,7 @@ function index() {
         {
           id: 288,
           commentType: "Community",
-          userName: "정주",
+          userName: "23r4s",
           userId: 57,
           boardId: 117,
           createdAt: "2024-12-10 12:13:58",
@@ -139,7 +139,7 @@ function index() {
         {
           id: 287,
           commentType: "Community",
-          userName: "정주",
+          userName: "23r4s",
           userId: 57,
           boardId: 117,
           createdAt: "2024-12-10 12:13:46",
@@ -152,7 +152,7 @@ function index() {
         {
           id: 286,
           commentType: "Community",
-          userName: "정주",
+          userName: "23r4s",
           userId: 57,
           boardId: 117,
           createdAt: "2024-12-10 12:13:40",
@@ -165,7 +165,7 @@ function index() {
         {
           id: 285,
           commentType: "Community",
-          userName: "정주",
+          userName: "23r4s",
           userId: 57,
           boardId: 117,
           createdAt: "2024-12-10 12:13:36",
@@ -178,7 +178,7 @@ function index() {
         {
           id: 284,
           commentType: "Community",
-          userName: "정주",
+          userName: "23r4s",
           userId: 57,
           boardId: 117,
           createdAt: "2024-12-10 12:13:33",
@@ -191,7 +191,7 @@ function index() {
         {
           id: 283,
           commentType: "Community",
-          userName: "정주",
+          userName: "23r4s",
           userId: 57,
           boardId: 115,
           createdAt: "2024-12-10 12:10:58",
@@ -204,7 +204,7 @@ function index() {
         {
           id: 282,
           commentType: "Community",
-          userName: "정주",
+          userName: "23r4s",
           userId: 57,
           boardId: 115,
           createdAt: "2024-12-10 12:10:51",
@@ -217,7 +217,7 @@ function index() {
         {
           id: 281,
           commentType: "Community",
-          userName: "정주",
+          userName: "23r4s",
           userId: 57,
           boardId: 115,
           createdAt: "2024-12-10 12:05:38",
@@ -230,7 +230,7 @@ function index() {
         {
           id: 280,
           commentType: "Community",
-          userName: "김훈직",
+          userName: "trnfsgn",
           userId: 55,
           boardId: 114,
           createdAt: "2024-12-10 12:04:24",
@@ -243,7 +243,7 @@ function index() {
         {
           id: 279,
           commentType: "Community",
-          userName: "정주",
+          userName: "23r4s",
           userId: 57,
           boardId: 115,
           createdAt: "2024-12-10 12:04:21",
@@ -256,7 +256,7 @@ function index() {
         {
           id: 278,
           commentType: "Community",
-          userName: "김훈직",
+          userName: "trnfsgn",
           userId: 55,
           boardId: 114,
           createdAt: "2024-12-10 12:04:21",
@@ -269,7 +269,7 @@ function index() {
         {
           id: 277,
           commentType: "Community",
-          userName: "김훈직",
+          userName: "trnfsgn",
           userId: 55,
           boardId: 115,
           createdAt: "2024-12-10 12:04:08",
@@ -282,7 +282,7 @@ function index() {
         {
           id: 276,
           commentType: "Community",
-          userName: "김훈직",
+          userName: "trnfsgn",
           userId: 55,
           boardId: 115,
           createdAt: "2024-12-10 12:03:59",
@@ -295,7 +295,7 @@ function index() {
         {
           id: 275,
           commentType: "Community",
-          userName: "김훈직",
+          userName: "trnfsgn",
           userId: 55,
           boardId: 115,
           createdAt: "2024-12-10 12:03:54",
@@ -308,7 +308,7 @@ function index() {
         {
           id: 274,
           commentType: "Community",
-          userName: "김훈직",
+          userName: "trnfsgn",
           userId: 55,
           boardId: 115,
           createdAt: "2024-12-10 12:00:36",
@@ -321,7 +321,7 @@ function index() {
         {
           id: 273,
           commentType: "Community",
-          userName: "김훈직",
+          userName: "trnfsgn",
           userId: 55,
           boardId: 115,
           createdAt: "2024-12-10 10:58:49",
@@ -334,7 +334,7 @@ function index() {
         {
           id: 272,
           commentType: "Community",
-          userName: "정주",
+          userName: "23r4s",
           userId: 57,
           boardId: 115,
           createdAt: "2024-12-10 10:58:26",

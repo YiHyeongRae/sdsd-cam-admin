@@ -907,148 +907,151 @@ function index() {
   const [comments, setComments] = useState<any[][]>([[]]);
   const [searchComment, setSearchComment] = useState("");
 
-  const submitGetComments = (id: string, searchWord?: string) => {
-    // setLoading(true);
-    // api
-    //   .get(`/admin/mindfulness/comment`, {
-    //     params: {
-    //       mindfulnessId: Number(id),
-    //       page: commentPerPage.page,
-    //       searchWord: searchWord,
-    //     },
-    //   })
-    //   .then((result) => {
-    //     setLoading(false);
+  const submitGetComments = () =>
+    // id: string, searchWord?: string
 
-    //     const copyCommnets = [...(result.data.comments || [])];
-    //     const chunked = chunk(copyCommnets, commentPerPage.perPage);
-    //     setComments(chunked);
+    {
+      // setLoading(true);
+      // api
+      //   .get(`/admin/mindfulness/comment`, {
+      //     params: {
+      //       mindfulnessId: Number(id),
+      //       page: commentPerPage.page,
+      //       searchWord: searchWord,
+      //     },
+      //   })
+      //   .then((result) => {
+      //     setLoading(false);
 
-    //     setCommentPerPage((prev) => {
-    //       return {
-    //         ...prev,
-    //         pageLength: Math.ceil(result.data.totalCount / prev.perPage),
-    //       };
-    //     });
-    //   })
-    //   .catch((error) => {
-    //     console.log(error);
-    //     setLoading(false);
-    //   });
+      //     const copyCommnets = [...(result.data.comments || [])];
+      //     const chunked = chunk(copyCommnets, commentPerPage.perPage);
+      //     setComments(chunked);
 
-    const dummyResult: any = {
-      totalCount: 8,
-      comments: [
-        {
-          id: 34,
-          userName: "그시",
-          userId: 62,
-          createdAt: "2024-12-18 14:05:10",
-          updatedAt: "2024-12-18 14:05:10",
-          comment: "하이용",
-          like: 0,
-          isDeleted: false,
-          mindfulnessCommentId: null,
-          reportNum: 0,
-        },
-        {
-          id: 20,
-          userName: "정주",
-          userId: 57,
-          createdAt: "2024-12-10 14:38:38",
-          updatedAt: "2024-12-10 14:38:38",
-          comment: "해피해킹",
-          like: 0,
-          isDeleted: false,
-          mindfulnessCommentId: null,
-          reportNum: 0,
-        },
-        {
-          id: 15,
-          userName: "정주",
-          userId: 57,
-          createdAt: "2024-12-10 14:38:03",
-          updatedAt: "2024-12-10 14:38:03",
-          comment: "하이요",
-          like: 0,
-          isDeleted: false,
-          mindfulnessCommentId: null,
-          reportNum: 0,
-        },
-        {
-          id: 6,
-          userName: "정주",
-          userId: 57,
-          createdAt: "2024-12-10 09:40:12",
-          updatedAt: "2024-12-10 09:40:12",
-          comment: "족발",
-          like: 0,
-          isDeleted: false,
-          mindfulnessCommentId: null,
-          reportNum: 0,
-        },
-        {
-          id: 5,
-          userName: "정주",
-          userId: 57,
-          createdAt: "2024-12-10 09:37:12",
-          updatedAt: "2024-12-10 09:37:12",
-          comment: "치킨",
-          like: 0,
-          isDeleted: false,
-          mindfulnessCommentId: null,
-          reportNum: 0,
-        },
-        {
-          id: 4,
-          userName: "정주",
-          userId: 57,
-          createdAt: "2024-12-10 09:35:50",
-          updatedAt: "2024-12-10 09:35:50",
-          comment: "햄버거",
-          like: 0,
-          isDeleted: false,
-          mindfulnessCommentId: null,
-          reportNum: 0,
-        },
-        {
-          id: 3,
-          userName: "정주",
-          userId: 57,
-          createdAt: "2024-12-10 09:34:01",
-          updatedAt: "2024-12-10 09:34:01",
-          comment: "피자",
-          like: 0,
-          isDeleted: false,
-          mindfulnessCommentId: null,
-          reportNum: 0,
-        },
-        {
-          id: 1,
-          userName: "카고임",
-          userId: 29,
-          createdAt: "2024-11-07 14:05:36",
-          updatedAt: "2024-11-07 14:05:36",
-          comment: "ㅎㅇ",
-          like: 0,
-          isDeleted: false,
-          mindfulnessCommentId: null,
-          reportNum: 0,
-        },
-      ],
-    };
+      //     setCommentPerPage((prev) => {
+      //       return {
+      //         ...prev,
+      //         pageLength: Math.ceil(result.data.totalCount / prev.perPage),
+      //       };
+      //     });
+      //   })
+      //   .catch((error) => {
+      //     console.log(error);
+      //     setLoading(false);
+      //   });
 
-    const copyCommnets = [...(dummyResult.comments || [])];
-    const chunked = chunk(copyCommnets, commentPerPage.perPage);
-    setComments(chunked);
-
-    setCommentPerPage((prev) => {
-      return {
-        ...prev,
-        pageLength: Math.ceil(dummyResult.totalCount / prev.perPage),
+      const dummyResult: any = {
+        totalCount: 8,
+        comments: [
+          {
+            id: 34,
+            userName: "그시",
+            userId: 62,
+            createdAt: "2024-12-18 14:05:10",
+            updatedAt: "2024-12-18 14:05:10",
+            comment: "하이용",
+            like: 0,
+            isDeleted: false,
+            mindfulnessCommentId: null,
+            reportNum: 0,
+          },
+          {
+            id: 20,
+            userName: "ㅁㄷㄱㅎ",
+            userId: 57,
+            createdAt: "2024-12-10 14:38:38",
+            updatedAt: "2024-12-10 14:38:38",
+            comment: "해피해킹",
+            like: 0,
+            isDeleted: false,
+            mindfulnessCommentId: null,
+            reportNum: 0,
+          },
+          {
+            id: 15,
+            userName: "ㅁㄷㄱㅎ",
+            userId: 57,
+            createdAt: "2024-12-10 14:38:03",
+            updatedAt: "2024-12-10 14:38:03",
+            comment: "하이요",
+            like: 0,
+            isDeleted: false,
+            mindfulnessCommentId: null,
+            reportNum: 0,
+          },
+          {
+            id: 6,
+            userName: "ㅁㄷㄱㅎ",
+            userId: 57,
+            createdAt: "2024-12-10 09:40:12",
+            updatedAt: "2024-12-10 09:40:12",
+            comment: "족발",
+            like: 0,
+            isDeleted: false,
+            mindfulnessCommentId: null,
+            reportNum: 0,
+          },
+          {
+            id: 5,
+            userName: "ㅁㄷㄱㅎ",
+            userId: 57,
+            createdAt: "2024-12-10 09:37:12",
+            updatedAt: "2024-12-10 09:37:12",
+            comment: "치킨",
+            like: 0,
+            isDeleted: false,
+            mindfulnessCommentId: null,
+            reportNum: 0,
+          },
+          {
+            id: 4,
+            userName: "ㅁㄷㄱㅎ",
+            userId: 57,
+            createdAt: "2024-12-10 09:35:50",
+            updatedAt: "2024-12-10 09:35:50",
+            comment: "햄버거",
+            like: 0,
+            isDeleted: false,
+            mindfulnessCommentId: null,
+            reportNum: 0,
+          },
+          {
+            id: 3,
+            userName: "ㅁㄷㄱㅎ",
+            userId: 57,
+            createdAt: "2024-12-10 09:34:01",
+            updatedAt: "2024-12-10 09:34:01",
+            comment: "피자",
+            like: 0,
+            isDeleted: false,
+            mindfulnessCommentId: null,
+            reportNum: 0,
+          },
+          {
+            id: 1,
+            userName: "ㄴㄴ",
+            userId: 29,
+            createdAt: "2024-11-07 14:05:36",
+            updatedAt: "2024-11-07 14:05:36",
+            comment: "ㅎㅇ",
+            like: 0,
+            isDeleted: false,
+            mindfulnessCommentId: null,
+            reportNum: 0,
+          },
+        ],
       };
-    });
-  };
+
+      const copyCommnets = [...(dummyResult.comments || [])];
+      const chunked = chunk(copyCommnets, commentPerPage.perPage);
+      setComments(chunked);
+
+      setCommentPerPage((prev) => {
+        return {
+          ...prev,
+          pageLength: Math.ceil(dummyResult.totalCount / prev.perPage),
+        };
+      });
+    };
 
   const submitDeleteComment = (id: string) => {
     api
@@ -1058,7 +1061,8 @@ function index() {
 
         setLoading(false);
 
-        submitGetComments(contentDetail.id);
+        // submitGetComments(contentDetail.id);
+        submitGetComments();
       })
       .catch((error) => {
         console.log(error);
@@ -1734,6 +1738,8 @@ function index() {
                                 className="cursor-pointer"
                                 onClick={() => {
                                   // submitGetComments(Number(item.id));
+                                  submitGetComments();
+
                                   setContentDetail((prev) => {
                                     return {
                                       ...prev,
@@ -1799,7 +1805,7 @@ function index() {
                           },
                           dbClickFunc: (item: TdObjTypes, index: number) => {
                             openModal("content-modal");
-                            // submitSearchContentDetail(item.id as number);
+                            submitSearchContentDetail(item.id as number);
 
                             setCurrentEdit("content");
                           },
@@ -1956,37 +1962,40 @@ function index() {
                   >
                     첨부
                   </label>
-                  <div
-                    className="tooltip tooltip-bottom"
-                    data-tip={
-                      contentDetail.thumbnail?.name ||
-                      useSpliceLinkText(String(contentDetail.thumbnail))
-                    }
-                  >
+                  {contentDetail.thumbnail && (
                     <div
-                      className={`truncate text-left ${
-                        contentDetail.thumbnail?.name || contentDetail.thumbnail
-                          ? ""
-                          : "hidden"
-                      } `}
+                      className="tooltip tooltip-bottom"
+                      data-tip={
+                        contentDetail.thumbnail?.name ||
+                        useSpliceLinkText(String(contentDetail.thumbnail))
+                      }
                     >
-                      {contentDetail.thumbnail?.name ||
-                        useSpliceLinkText(String(contentDetail.thumbnail))}
+                      <div
+                        className={`truncate text-left ${
+                          contentDetail.thumbnail?.name ||
+                          contentDetail.thumbnail
+                            ? ""
+                            : "hidden"
+                        } `}
+                      >
+                        {contentDetail.thumbnail?.name ||
+                          useSpliceLinkText(String(contentDetail.thumbnail))}
+                      </div>
+                      <span
+                        className="absolute top-0 right-0 ml-2 cursor-pointer text-error"
+                        onClick={() => {
+                          setContentDetail((prev) => {
+                            return {
+                              ...prev,
+                              thumbnail: null,
+                            };
+                          });
+                        }}
+                      >
+                        x
+                      </span>
                     </div>
-                    <span
-                      className="absolute top-0 right-0 ml-2 cursor-pointer text-error"
-                      onClick={() => {
-                        setContentDetail((prev) => {
-                          return {
-                            ...prev,
-                            thumbnail: null,
-                          };
-                        });
-                      }}
-                    >
-                      x
-                    </span>
-                  </div>
+                  )}
 
                   <div className="col-span-3 label-text-alt text-error">
                     ※ 10MB 이하 이미지 파일을 업로드해주세요 (권장 해상도 444 X
@@ -2102,42 +2111,44 @@ function index() {
                         >
                           첨부
                         </label>
-                        <div
-                          className="tooltip tooltip-bottom"
-                          data-tip={
-                            contentDetail.voice1ActiveImage?.name ||
-                            useSpliceLinkText(
-                              String(contentDetail.voice1ActiveImage)
-                            )
-                          }
-                        >
+                        {contentDetail.voice1ActiveImage && (
                           <div
-                            className={`truncate text-left ${
+                            className="tooltip tooltip-bottom"
+                            data-tip={
                               contentDetail.voice1ActiveImage?.name ||
-                              contentDetail.voice1ActiveImage
-                                ? ""
-                                : "hidden"
-                            } `}
-                          >
-                            {contentDetail.voice1ActiveImage?.name ||
                               useSpliceLinkText(
                                 String(contentDetail.voice1ActiveImage)
-                              )}
-                          </div>
-                          <span
-                            className="absolute top-0 right-0 ml-2 cursor-pointer text-error"
-                            onClick={() => {
-                              setContentDetail((prev) => {
-                                return {
-                                  ...prev,
-                                  voice1ActiveImage: null,
-                                };
-                              });
-                            }}
+                              )
+                            }
                           >
-                            x
-                          </span>
-                        </div>
+                            <div
+                              className={`truncate text-left ${
+                                contentDetail.voice1ActiveImage?.name ||
+                                contentDetail.voice1ActiveImage
+                                  ? ""
+                                  : "hidden"
+                              } `}
+                            >
+                              {contentDetail.voice1ActiveImage?.name ||
+                                useSpliceLinkText(
+                                  String(contentDetail.voice1ActiveImage)
+                                )}
+                            </div>
+                            <span
+                              className="absolute top-0 right-0 ml-2 cursor-pointer text-error"
+                              onClick={() => {
+                                setContentDetail((prev) => {
+                                  return {
+                                    ...prev,
+                                    voice1ActiveImage: null,
+                                  };
+                                });
+                              }}
+                            >
+                              x
+                            </span>
+                          </div>
+                        )}
 
                         <input
                           id="voice1-active"
@@ -2171,42 +2182,44 @@ function index() {
                         >
                           첨부
                         </label>
-                        <div
-                          className="tooltip tooltip-bottom"
-                          data-tip={
-                            contentDetail.voice1InactiveImage?.name ||
-                            useSpliceLinkText(
-                              String(contentDetail.voice1InactiveImage)
-                            )
-                          }
-                        >
+                        {contentDetail.voice1InactiveImage && (
                           <div
-                            className={`truncate text-left ${
+                            className="tooltip tooltip-bottom"
+                            data-tip={
                               contentDetail.voice1InactiveImage?.name ||
-                              contentDetail.voice1InactiveImage
-                                ? ""
-                                : "hidden"
-                            } `}
-                          >
-                            {contentDetail.voice1InactiveImage?.name ||
                               useSpliceLinkText(
                                 String(contentDetail.voice1InactiveImage)
-                              )}
-                          </div>
-                          <span
-                            className="absolute top-0 right-0 ml-2 cursor-pointer text-error"
-                            onClick={() => {
-                              setContentDetail((prev) => {
-                                return {
-                                  ...prev,
-                                  voice1InactiveImage: null,
-                                };
-                              });
-                            }}
+                              )
+                            }
                           >
-                            x
-                          </span>
-                        </div>
+                            <div
+                              className={`truncate text-left ${
+                                contentDetail.voice1InactiveImage?.name ||
+                                contentDetail.voice1InactiveImage
+                                  ? ""
+                                  : "hidden"
+                              } `}
+                            >
+                              {contentDetail.voice1InactiveImage?.name ||
+                                useSpliceLinkText(
+                                  String(contentDetail.voice1InactiveImage)
+                                )}
+                            </div>
+                            <span
+                              className="absolute top-0 right-0 ml-2 cursor-pointer text-error"
+                              onClick={() => {
+                                setContentDetail((prev) => {
+                                  return {
+                                    ...prev,
+                                    voice1InactiveImage: null,
+                                  };
+                                });
+                              }}
+                            >
+                              x
+                            </span>
+                          </div>
+                        )}
 
                         <input
                           id="voice1-inactive"
@@ -2241,42 +2254,44 @@ function index() {
                         >
                           첨부
                         </label>
-                        <div
-                          className="tooltip tooltip-bottom"
-                          data-tip={
-                            contentDetail.voice1PanelImage?.name ||
-                            useSpliceLinkText(
-                              String(contentDetail.voice1PanelImage)
-                            )
-                          }
-                        >
+                        {contentDetail.voice1PanelImage && (
                           <div
-                            className={`truncate text-left ${
+                            className="tooltip tooltip-bottom"
+                            data-tip={
                               contentDetail.voice1PanelImage?.name ||
-                              contentDetail.voice1PanelImage
-                                ? ""
-                                : "hidden"
-                            } `}
-                          >
-                            {contentDetail.voice1PanelImage?.name ||
                               useSpliceLinkText(
                                 String(contentDetail.voice1PanelImage)
-                              )}
-                          </div>
-                          <span
-                            className="absolute top-0 right-0 ml-2 cursor-pointer text-error"
-                            onClick={() => {
-                              setContentDetail((prev) => {
-                                return {
-                                  ...prev,
-                                  voice1PanelImage: null,
-                                };
-                              });
-                            }}
+                              )
+                            }
                           >
-                            x
-                          </span>
-                        </div>
+                            <div
+                              className={`truncate text-left ${
+                                contentDetail.voice1PanelImage?.name ||
+                                contentDetail.voice1PanelImage
+                                  ? ""
+                                  : "hidden"
+                              } `}
+                            >
+                              {contentDetail.voice1PanelImage?.name ||
+                                useSpliceLinkText(
+                                  String(contentDetail.voice1PanelImage)
+                                )}
+                            </div>
+                            <span
+                              className="absolute top-0 right-0 ml-2 cursor-pointer text-error"
+                              onClick={() => {
+                                setContentDetail((prev) => {
+                                  return {
+                                    ...prev,
+                                    voice1PanelImage: null,
+                                  };
+                                });
+                              }}
+                            >
+                              x
+                            </span>
+                          </div>
+                        )}
 
                         <input
                           id="voice1-panel"
@@ -2309,37 +2324,40 @@ function index() {
                         >
                           첨부
                         </label>
-                        <div
-                          className="tooltip tooltip-bottom"
-                          data-tip={
-                            contentDetail.voice1?.name ||
-                            useSpliceLinkText(String(contentDetail.voice1))
-                          }
-                        >
+                        {contentDetail.voice1 && (
                           <div
-                            className={`truncate text-left ${
-                              contentDetail.voice1?.name || contentDetail.voice1
-                                ? ""
-                                : "hidden"
-                            } `}
+                            className="tooltip tooltip-bottom"
+                            data-tip={
+                              contentDetail.voice1?.name ||
+                              useSpliceLinkText(String(contentDetail.voice1))
+                            }
                           >
-                            {contentDetail.voice1?.name ||
-                              useSpliceLinkText(String(contentDetail.voice1))}
+                            <div
+                              className={`truncate text-left ${
+                                contentDetail.voice1?.name ||
+                                contentDetail.voice1
+                                  ? ""
+                                  : "hidden"
+                              } `}
+                            >
+                              {contentDetail.voice1?.name ||
+                                useSpliceLinkText(String(contentDetail.voice1))}
+                            </div>
+                            <span
+                              className="absolute top-0 right-0 ml-2 cursor-pointer text-error"
+                              onClick={() => {
+                                setContentDetail((prev) => {
+                                  return {
+                                    ...prev,
+                                    voice1: null,
+                                  };
+                                });
+                              }}
+                            >
+                              x
+                            </span>
                           </div>
-                          <span
-                            className="absolute top-0 right-0 ml-2 cursor-pointer text-error"
-                            onClick={() => {
-                              setContentDetail((prev) => {
-                                return {
-                                  ...prev,
-                                  voice1: null,
-                                };
-                              });
-                            }}
-                          >
-                            x
-                          </span>
-                        </div>
+                        )}
 
                         <input
                           id="voice1-audio"
@@ -2390,42 +2408,44 @@ function index() {
                         >
                           첨부
                         </label>
-                        <div
-                          className="tooltip tooltip-bottom"
-                          data-tip={
-                            contentDetail.voice2ActiveImage?.name ||
-                            useSpliceLinkText(
-                              String(contentDetail.voice2ActiveImage)
-                            )
-                          }
-                        >
+                        {contentDetail.voice2ActiveImage && (
                           <div
-                            className={`truncate text-left ${
+                            className="tooltip tooltip-bottom"
+                            data-tip={
                               contentDetail.voice2ActiveImage?.name ||
-                              contentDetail.voice2ActiveImage
-                                ? ""
-                                : "hidden"
-                            } `}
-                          >
-                            {contentDetail.voice2ActiveImage?.name ||
                               useSpliceLinkText(
                                 String(contentDetail.voice2ActiveImage)
-                              )}
-                          </div>
-                          <span
-                            className="absolute top-0 right-0 ml-2 cursor-pointer text-error"
-                            onClick={() => {
-                              setContentDetail((prev) => {
-                                return {
-                                  ...prev,
-                                  voice2ActiveImage: null,
-                                };
-                              });
-                            }}
+                              )
+                            }
                           >
-                            x
-                          </span>
-                        </div>
+                            <div
+                              className={`truncate text-left ${
+                                contentDetail.voice2ActiveImage?.name ||
+                                contentDetail.voice2ActiveImage
+                                  ? ""
+                                  : "hidden"
+                              } `}
+                            >
+                              {contentDetail.voice2ActiveImage?.name ||
+                                useSpliceLinkText(
+                                  String(contentDetail.voice2ActiveImage)
+                                )}
+                            </div>
+                            <span
+                              className="absolute top-0 right-0 ml-2 cursor-pointer text-error"
+                              onClick={() => {
+                                setContentDetail((prev) => {
+                                  return {
+                                    ...prev,
+                                    voice2ActiveImage: null,
+                                  };
+                                });
+                              }}
+                            >
+                              x
+                            </span>
+                          </div>
+                        )}
 
                         <input
                           id="voice2-active"
@@ -2460,42 +2480,44 @@ function index() {
                         >
                           첨부
                         </label>
-                        <div
-                          className="tooltip tooltip-bottom"
-                          data-tip={
-                            contentDetail.voice2InactiveImage?.name ||
-                            useSpliceLinkText(
-                              String(contentDetail.voice2InactiveImage)
-                            )
-                          }
-                        >
+                        {contentDetail.voice2InactiveImage && (
                           <div
-                            className={`truncate text-left ${
+                            className="tooltip tooltip-bottom"
+                            data-tip={
                               contentDetail.voice2InactiveImage?.name ||
-                              contentDetail.voice2InactiveImage
-                                ? ""
-                                : "hidden"
-                            } `}
-                          >
-                            {contentDetail.voice2InactiveImage?.name ||
                               useSpliceLinkText(
                                 String(contentDetail.voice2InactiveImage)
-                              )}
-                          </div>
-                          <span
-                            className="absolute top-0 right-0 ml-2 cursor-pointer text-error"
-                            onClick={() => {
-                              setContentDetail((prev) => {
-                                return {
-                                  ...prev,
-                                  voice2InactiveImage: null,
-                                };
-                              });
-                            }}
+                              )
+                            }
                           >
-                            x
-                          </span>
-                        </div>
+                            <div
+                              className={`truncate text-left ${
+                                contentDetail.voice2InactiveImage?.name ||
+                                contentDetail.voice2InactiveImage
+                                  ? ""
+                                  : "hidden"
+                              } `}
+                            >
+                              {contentDetail.voice2InactiveImage?.name ||
+                                useSpliceLinkText(
+                                  String(contentDetail.voice2InactiveImage)
+                                )}
+                            </div>
+                            <span
+                              className="absolute top-0 right-0 ml-2 cursor-pointer text-error"
+                              onClick={() => {
+                                setContentDetail((prev) => {
+                                  return {
+                                    ...prev,
+                                    voice2InactiveImage: null,
+                                  };
+                                });
+                              }}
+                            >
+                              x
+                            </span>
+                          </div>
+                        )}
 
                         <input
                           id="voice2-inactive"
@@ -2531,42 +2553,44 @@ function index() {
                         >
                           첨부
                         </label>
-                        <div
-                          className="tooltip tooltip-bottom"
-                          data-tip={
-                            contentDetail.voice2PanelImage?.name ||
-                            useSpliceLinkText(
-                              String(contentDetail.voice2PanelImage)
-                            )
-                          }
-                        >
+                        {contentDetail.voice2PanelImage && (
                           <div
-                            className={`truncate text-left ${
+                            className="tooltip tooltip-bottom"
+                            data-tip={
                               contentDetail.voice2PanelImage?.name ||
-                              contentDetail.voice2PanelImage
-                                ? ""
-                                : "hidden"
-                            } `}
-                          >
-                            {contentDetail.voice2PanelImage?.name ||
                               useSpliceLinkText(
                                 String(contentDetail.voice2PanelImage)
-                              )}
-                          </div>
-                          <span
-                            className="absolute top-0 right-0 ml-2 cursor-pointer text-error"
-                            onClick={() => {
-                              setContentDetail((prev) => {
-                                return {
-                                  ...prev,
-                                  voice2PanelImage: null,
-                                };
-                              });
-                            }}
+                              )
+                            }
                           >
-                            x
-                          </span>
-                        </div>
+                            <div
+                              className={`truncate text-left ${
+                                contentDetail.voice2PanelImage?.name ||
+                                contentDetail.voice2PanelImage
+                                  ? ""
+                                  : "hidden"
+                              } `}
+                            >
+                              {contentDetail.voice2PanelImage?.name ||
+                                useSpliceLinkText(
+                                  String(contentDetail.voice2PanelImage)
+                                )}
+                            </div>
+                            <span
+                              className="absolute top-0 right-0 ml-2 cursor-pointer text-error"
+                              onClick={() => {
+                                setContentDetail((prev) => {
+                                  return {
+                                    ...prev,
+                                    voice2PanelImage: null,
+                                  };
+                                });
+                              }}
+                            >
+                              x
+                            </span>
+                          </div>
+                        )}
 
                         <input
                           id="voice2-panel"
@@ -2600,37 +2624,40 @@ function index() {
                         >
                           첨부
                         </label>
-                        <div
-                          className="tooltip tooltip-bottom"
-                          data-tip={
-                            contentDetail.voice2?.name ||
-                            useSpliceLinkText(String(contentDetail.voice2))
-                          }
-                        >
+                        {contentDetail.voice2 && (
                           <div
-                            className={`truncate text-left ${
-                              contentDetail.voice2?.name || contentDetail.voice2
-                                ? ""
-                                : "hidden"
-                            } `}
+                            className="tooltip tooltip-bottom"
+                            data-tip={
+                              contentDetail.voice2?.name ||
+                              useSpliceLinkText(String(contentDetail.voice2))
+                            }
                           >
-                            {contentDetail.voice2?.name ||
-                              useSpliceLinkText(String(contentDetail.voice2))}
+                            <div
+                              className={`truncate text-left ${
+                                contentDetail.voice2?.name ||
+                                contentDetail.voice2
+                                  ? ""
+                                  : "hidden"
+                              } `}
+                            >
+                              {contentDetail.voice2?.name ||
+                                useSpliceLinkText(String(contentDetail.voice2))}
+                            </div>
+                            <span
+                              className="absolute top-0 right-0 ml-2 cursor-pointer text-error"
+                              onClick={() => {
+                                setContentDetail((prev) => {
+                                  return {
+                                    ...prev,
+                                    voice2: null,
+                                  };
+                                });
+                              }}
+                            >
+                              x
+                            </span>
                           </div>
-                          <span
-                            className="absolute top-0 right-0 ml-2 cursor-pointer text-error"
-                            onClick={() => {
-                              setContentDetail((prev) => {
-                                return {
-                                  ...prev,
-                                  voice2: null,
-                                };
-                              });
-                            }}
-                          >
-                            x
-                          </span>
-                        </div>
+                        )}
 
                         <input
                           id="voice2-audio"
@@ -2694,42 +2721,44 @@ function index() {
                       >
                         첨부
                       </label>
-                      <div
-                        className="tooltip tooltip-bottom"
-                        data-tip={
-                          contentDetail.backgroundImage?.name ||
-                          useSpliceLinkText(
-                            String(contentDetail.backgroundImage)
-                          )
-                        }
-                      >
+                      {contentDetail.backgroundImage && (
                         <div
-                          className={`truncate text-left ${
+                          className="tooltip tooltip-bottom"
+                          data-tip={
                             contentDetail.backgroundImage?.name ||
-                            contentDetail.backgroundImage
-                              ? ""
-                              : "hidden"
-                          } `}
-                        >
-                          {contentDetail.backgroundImage?.name ||
                             useSpliceLinkText(
                               String(contentDetail.backgroundImage)
-                            )}
-                        </div>
-                        <span
-                          className="absolute top-0 right-0 ml-2 cursor-pointer text-error"
-                          onClick={() => {
-                            setContentDetail((prev) => {
-                              return {
-                                ...prev,
-                                backgroundImage: null,
-                              };
-                            });
-                          }}
+                            )
+                          }
                         >
-                          x
-                        </span>
-                      </div>
+                          <div
+                            className={`truncate text-left ${
+                              contentDetail.backgroundImage?.name ||
+                              contentDetail.backgroundImage
+                                ? ""
+                                : "hidden"
+                            } `}
+                          >
+                            {contentDetail.backgroundImage?.name ||
+                              useSpliceLinkText(
+                                String(contentDetail.backgroundImage)
+                              )}
+                          </div>
+                          <span
+                            className="absolute top-0 right-0 ml-2 cursor-pointer text-error"
+                            onClick={() => {
+                              setContentDetail((prev) => {
+                                return {
+                                  ...prev,
+                                  backgroundImage: null,
+                                };
+                              });
+                            }}
+                          >
+                            x
+                          </span>
+                        </div>
+                      )}
 
                       <input
                         id="background-image"
@@ -2764,38 +2793,42 @@ function index() {
                       >
                         첨부
                       </label>
-                      <div
-                        className="tooltip tooltip-bottom"
-                        data-tip={
-                          contentDetail.backGround?.name ||
-                          useSpliceLinkText(String(contentDetail.backGround))
-                        }
-                      >
+                      {contentDetail.backGround && (
                         <div
-                          className={`truncate text-left ${
+                          className="tooltip tooltip-bottom"
+                          data-tip={
                             contentDetail.backGround?.name ||
-                            contentDetail.backGround
-                              ? ""
-                              : "hidden"
-                          } `}
+                            useSpliceLinkText(String(contentDetail.backGround))
+                          }
                         >
-                          {contentDetail.backGround?.name ||
-                            useSpliceLinkText(String(contentDetail.backGround))}
+                          <div
+                            className={`truncate text-left ${
+                              contentDetail.backGround?.name ||
+                              contentDetail.backGround
+                                ? ""
+                                : "hidden"
+                            } `}
+                          >
+                            {contentDetail.backGround?.name ||
+                              useSpliceLinkText(
+                                String(contentDetail.backGround)
+                              )}
+                          </div>
+                          <span
+                            className="absolute top-0 right-0 ml-2 cursor-pointer text-error"
+                            onClick={() => {
+                              setContentDetail((prev) => {
+                                return {
+                                  ...prev,
+                                  backGround: null,
+                                };
+                              });
+                            }}
+                          >
+                            x
+                          </span>
                         </div>
-                        <span
-                          className="absolute top-0 right-0 ml-2 cursor-pointer text-error"
-                          onClick={() => {
-                            setContentDetail((prev) => {
-                              return {
-                                ...prev,
-                                backGround: null,
-                              };
-                            });
-                          }}
-                        >
-                          x
-                        </span>
-                      </div>
+                      )}
 
                       <input
                         id="background-audio"
@@ -2857,40 +2890,44 @@ function index() {
                       >
                         첨부
                       </label>
-                      <div
-                        className="tooltip tooltip-bottom"
-                        data-tip={
-                          contentDetail.soundEffect1?.name ||
-                          useSpliceLinkText(String(contentDetail.soundEffect1))
-                        }
-                      >
+                      {contentDetail.soundEffect1 && (
                         <div
-                          className={`truncate text-left ${
+                          className="tooltip tooltip-bottom"
+                          data-tip={
                             contentDetail.soundEffect1?.name ||
-                            contentDetail.soundEffect1
-                              ? ""
-                              : "hidden"
-                          } `}
-                        >
-                          {contentDetail.soundEffect1?.name ||
                             useSpliceLinkText(
                               String(contentDetail.soundEffect1)
-                            )}
-                        </div>
-                        <span
-                          className="absolute top-0 right-0 ml-2 cursor-pointer text-error"
-                          onClick={() => {
-                            setContentDetail((prev) => {
-                              return {
-                                ...prev,
-                                soundEffect1: null,
-                              };
-                            });
-                          }}
+                            )
+                          }
                         >
-                          x
-                        </span>
-                      </div>
+                          <div
+                            className={`truncate text-left ${
+                              contentDetail.soundEffect1?.name ||
+                              contentDetail.soundEffect1
+                                ? ""
+                                : "hidden"
+                            } `}
+                          >
+                            {contentDetail.soundEffect1?.name ||
+                              useSpliceLinkText(
+                                String(contentDetail.soundEffect1)
+                              )}
+                          </div>
+                          <span
+                            className="absolute top-0 right-0 ml-2 cursor-pointer text-error"
+                            onClick={() => {
+                              setContentDetail((prev) => {
+                                return {
+                                  ...prev,
+                                  soundEffect1: null,
+                                };
+                              });
+                            }}
+                          >
+                            x
+                          </span>
+                        </div>
+                      )}
 
                       <input
                         id="soundEffect1-audio"
@@ -2947,40 +2984,44 @@ function index() {
                       >
                         첨부
                       </label>
-                      <div
-                        className="tooltip tooltip-bottom"
-                        data-tip={
-                          contentDetail.soundEffect2?.name ||
-                          useSpliceLinkText(String(contentDetail.soundEffect2))
-                        }
-                      >
+                      {contentDetail.soundEffect2 && (
                         <div
-                          className={`truncate text-left ${
+                          className="tooltip tooltip-bottom"
+                          data-tip={
                             contentDetail.soundEffect2?.name ||
-                            contentDetail.soundEffect2
-                              ? ""
-                              : "hidden"
-                          } `}
-                        >
-                          {contentDetail.soundEffect2?.name ||
                             useSpliceLinkText(
                               String(contentDetail.soundEffect2)
-                            )}
-                        </div>
-                        <span
-                          className="absolute top-0 right-0 ml-2 cursor-pointer text-error"
-                          onClick={() => {
-                            setContentDetail((prev) => {
-                              return {
-                                ...prev,
-                                soundEffect2: null,
-                              };
-                            });
-                          }}
+                            )
+                          }
                         >
-                          x
-                        </span>
-                      </div>
+                          <div
+                            className={`truncate text-left ${
+                              contentDetail.soundEffect2?.name ||
+                              contentDetail.soundEffect2
+                                ? ""
+                                : "hidden"
+                            } `}
+                          >
+                            {contentDetail.soundEffect2?.name ||
+                              useSpliceLinkText(
+                                String(contentDetail.soundEffect2)
+                              )}
+                          </div>
+                          <span
+                            className="absolute top-0 right-0 ml-2 cursor-pointer text-error"
+                            onClick={() => {
+                              setContentDetail((prev) => {
+                                return {
+                                  ...prev,
+                                  soundEffect2: null,
+                                };
+                              });
+                            }}
+                          >
+                            x
+                          </span>
+                        </div>
+                      )}
 
                       <input
                         id="soundEffect2-audio"
@@ -3036,42 +3077,44 @@ function index() {
                           >
                             첨부
                           </label>
-                          <div
-                            className="tooltip tooltip-bottom"
-                            data-tip={
-                              contentDetail.soundEffect3?.name ||
-                              useSpliceLinkText(
-                                String(contentDetail.soundEffect3)
-                              )
-                            }
-                          >
+                          {contentDetail.soundEffect3 && (
                             <div
-                              className={`truncate text-left ${
+                              className="tooltip tooltip-bottom"
+                              data-tip={
                                 contentDetail.soundEffect3?.name ||
-                                contentDetail.soundEffect3
-                                  ? ""
-                                  : "hidden"
-                              } `}
-                            >
-                              {contentDetail.soundEffect3?.name ||
                                 useSpliceLinkText(
                                   String(contentDetail.soundEffect3)
-                                )}
-                            </div>
-                            <span
-                              className="absolute top-0 right-0 ml-2 cursor-pointer text-error"
-                              onClick={() => {
-                                setContentDetail((prev) => {
-                                  return {
-                                    ...prev,
-                                    soundEffect3: null,
-                                  };
-                                });
-                              }}
+                                )
+                              }
                             >
-                              x
-                            </span>
-                          </div>
+                              <div
+                                className={`truncate text-left ${
+                                  contentDetail.soundEffect3?.name ||
+                                  contentDetail.soundEffect3
+                                    ? ""
+                                    : "hidden"
+                                } `}
+                              >
+                                {contentDetail.soundEffect3?.name ||
+                                  useSpliceLinkText(
+                                    String(contentDetail.soundEffect3)
+                                  )}
+                              </div>
+                              <span
+                                className="absolute top-0 right-0 ml-2 cursor-pointer text-error"
+                                onClick={() => {
+                                  setContentDetail((prev) => {
+                                    return {
+                                      ...prev,
+                                      soundEffect3: null,
+                                    };
+                                  });
+                                }}
+                              >
+                                x
+                              </span>
+                            </div>
+                          )}
 
                           <input
                             id="soundEffect3-audio"
