@@ -1153,7 +1153,7 @@ function index() {
                       className="toggle toggle-primary max-xl:toggle-sm"
                       checked={isActive}
                       onChange={() => {
-                        chageActive("group", item);
+                        // chageActive("group", item);
                       }}
                     />
                   </div>
@@ -1263,7 +1263,7 @@ function index() {
                       className="toggle toggle-primary max-xl:toggle-sm"
                       checked={isActive}
                       onChange={() => {
-                        chageActive("group", item);
+                        // chageActive("group", item);
                       }}
                     />
                   </div>
@@ -1274,12 +1274,12 @@ function index() {
           trOptions={{
             thead: {
               isDraggable: (item: TdObjTypes) => {
-                return item?.isActive && tbodyTrdraggable === "ASMR그룹";
+                return tbodyTrdraggable === "ASMR그룹";
               },
             },
             tbody: {
               isDraggable: (item: TdObjTypes) => {
-                return item?.isActive && tbodyTrdraggable === "ASMR그룹";
+                return tbodyTrdraggable === "ASMR그룹";
               },
               dbClickFunc: (item: TdObjTypes, index: number) => {
                 // submitSearchGroupDetail(item.id as number);
@@ -1770,7 +1770,7 @@ function index() {
                                   className="toggle toggle-primary max-xl:toggle-sm"
                                   checked={isActive}
                                   onChange={() => {
-                                    chageActive("mindfulness", item);
+                                    // chageActive("mindfulness", item);
                                   }}
                                 />
                               </div>

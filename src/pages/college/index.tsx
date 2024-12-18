@@ -496,7 +496,8 @@ function index() {
           {
             style: "",
             text: "변경",
-            func: () => submitActiveCollege(),
+            // func: () => submitActiveCollege(),
+            func: () => {},
             disabled: false,
           },
         ]}
